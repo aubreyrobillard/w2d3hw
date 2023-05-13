@@ -64,3 +64,40 @@ function trollsBeGone(string) {
 }
 
 console.log(trollsBeGone("this was so hard to figure out, kill me"))
+
+console.log("************* Bank Account Summary **************")
+
+//Make an object named bankInfo with your banking info that includes the keys listed below. Each key should have a number value that can either be negative or positive (e.g. -500 or 500)
+
+// savings
+// checking
+// moneyMarket
+// creditCard
+// Write a function called bankAccountSummary that accepts your bankInfo object as an argument. The function should calculate the total of your bank account and return it.
+
+const bankInfo = {
+    savings: 600,
+    checking: 800,
+    moneyMarket: 200,
+    creditCard: -2000
+}
+function bankAccountSummary(obj) {
+    addNums= obj.savings + obj.checking + obj.moneyMarket + obj.creditCard
+    return addNums
+}
+
+console.log(bankAccountSummary(bankInfo))
+
+//Save your bankAccountSummary total to a variable called bankTotal
+
+let bankTotal = bankAccountSummary(bankInfo)
+// console.log(bankTotal)
+
+// Write another function called inTheRed that accepts your bank account summary total (number) as an argument. The function should return true if your total is less than 0, and false otherwise.
+
+function inTheRed(x) {
+    if (x <= 0){
+        console.log(true)
+    } else console.log(false)
+}
+inTheRed(bankTotal)
