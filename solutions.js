@@ -1,3 +1,4 @@
+console.log("************* setAlarm **************")
 // Write a function named setAlarm that has two arguments.
 
 // The first argument: employed (the boolean true would be passed in as a parameter whenever you are employed)
@@ -30,3 +31,19 @@ setAlarm(true, true) // => returns false
 setAlarm(false, false) // => returns false
 setAlarm(false, true) // => returns false
 setAlarm(true, false) // => returns true
+
+console.log("************* Count Odd Numbers **************")
+
+//Write a function named oddNumberCount which receives one argument that should be a number. The function should return how many positive odd numbers there are below the number passed into the argument.
+
+
+const oddNumbersCount = (x) => {
+    for (let i = 0; i < x; i++){
+        if (i % 2 !== 0)
+        console.log(i)
+    }
+}
+
+oddNumbersCount(10)
+
+//I can't figure out how to get the log as a single num instead of a list of odd nums
