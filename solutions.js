@@ -53,6 +53,14 @@ console.log("************* Disemvoweling Trolls **************")
 
 // Write a function named trollsBeGone which receives one argument that should be a sentence (a string). The function should return a new string with all the vowels removed from the original string.
 
-function trollsBeGone(meanComment) {
-
+function trollsBeGone(string) {
+    let constanants = ""
+    for (let i = 0; i < string.length; i++){
+        if ((string[i] != "u") && (string[i] != "o") && (string[i] != "a") && (string[i] != "i") && (string[i] != "e")){
+            constanants += string[i]
+        };
+    }
+    return constanants
 }
+
+console.log(trollsBeGone("this was so hard to figure out, kill me"))
