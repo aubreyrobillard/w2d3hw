@@ -37,13 +37,22 @@ console.log("************* Count Odd Numbers **************")
 //Write a function named oddNumberCount which receives one argument that should be a number. The function should return how many positive odd numbers there are below the number passed into the argument.
 
 
-const oddNumbersCount = (x) => {
+function oddNumbersCount(x) {
+    const numArr = []
     for (let i = 0; i < x; i++){
-        if (i % 2 !== 0)
-        console.log(i)
+        if (i % 2 !== 0){
+            numArr.push(i)
+        }
     }
+    return numArr.length
 }
 
-oddNumbersCount(10)
+console.log(oddNumbersCount(20))
 
-//I can't figure out how to get the log as a single num instead of a list of odd nums
+console.log("************* Disemvoweling Trolls **************")
+
+// Write a function named trollsBeGone which receives one argument that should be a sentence (a string). The function should return a new string with all the vowels removed from the original string.
+
+function trollsBeGone(meanComment) {
+
+}
